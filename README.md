@@ -12,5 +12,5 @@ The dabbling that I've done has given my a Let's Encrypt secured host.
 ### Bibliography
 
 * [A Docker-Compose PHP Environment From Scratch](https://x-team.com/blog/docker-compose-php-environment-from-scratch/)
-* [Nginx and Let’s Encrypt with Docker in Less Than 5 Minutes](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71) for Let's Encrypt
+* [Nginx and Let’s Encrypt with Docker in Less Than 5 Minutes](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)
 
