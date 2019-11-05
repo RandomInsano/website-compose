@@ -2,7 +2,7 @@
 
 I like Docker and had a need to set up a PHP-based website for a friend. What better time to play around with Docker Compose?!
 
-The dabbling that I've done has given my a Let's Encrypt secured host.
+The dabbling that I've done has given me a Let's Encrypt secured host.
 
 ### To do
 
