@@ -7,7 +7,6 @@ The dabbling that I've done has given my a Let's Encrypt secured host.
 ### To do
 
 * Allow Let's Encrypt setup without needing to uncomment parts of the nginx config
-* Automatically redirect from 80 to 443
 
 ### Bibliography
 

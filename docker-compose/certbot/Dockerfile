@@ -1,4 +1,4 @@
 FROM certbot/certbot
 
-ENTRYPOINT certbot certonly --agree-tos --webroot --webroot-path /var/www/letsencrypt --email edwinguy@gmail.com -d amsler.ca
+ENTRYPOINT certbot certonly --agree-tos --expand --webroot --webroot-path /var/www/letsencrypt --email user@example.com -d example.com,example.ca
 
