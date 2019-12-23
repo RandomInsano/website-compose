@@ -31,6 +31,7 @@ services:
       context: ./php-fpm
     volumes:
       - ../web-root:/var/www
+    user: www-root
     restart: always
   database:
     build:
