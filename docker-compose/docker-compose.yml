@@ -29,8 +29,8 @@ services:
   php-fpm:
     build:
       context: ./php-fpm
-    ports:
-      - "9000:9000"      
+    expose:
+      - "9000"      
     volumes:
       - ../web-root:/var/www
     user: www-root
