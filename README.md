@@ -26,6 +26,7 @@ cp docker-compose/nginx/sites/example.com.conf docker-compose/nginx/sites/exampl
 vi docker-compose/nginx/sites/example.com.conf # Disable SSL, change `server_name`, change `root` directory
 vi docker-compose/certbot/Dockerfile # Add `example.net` domain to the list
 sudo ./update.sh # To rebuild dockercompose_certbot_1 and generate new certs
+vi docker-compose/nginx/sites/example.com.conf # Enable SSL
 sudo ./update.sh # To restart nginx to load new certificates
 ```
 
