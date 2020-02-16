@@ -33,7 +33,7 @@ services:
       - "9000"      
     volumes:
       - ../web-root:/var/www
-    user: www-root
+    user: www-data
     restart: always
   database:
     build:
