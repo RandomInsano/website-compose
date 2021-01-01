@@ -13,6 +13,7 @@ The dabbling that I've done has given me a Let's Encrypt secured host.
 * Can scale the number of PHP workers via Kubernetes or Docker Swarm
 * Doesn't advirtise the version of PHP being used
 * PHP will never run as root
+* Helpful script to refresh certs :D
 
 ## Usage
 
