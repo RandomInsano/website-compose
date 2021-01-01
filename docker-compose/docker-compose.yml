@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   certbot:
@@ -10,13 +10,26 @@ services:
       - ../web-root/letsencrypt:/var/www/letsencrypt
     depends_on:
       - nginx
+  login:
+    build:
+      context:
+        ./ssh
+    ports:
+      - "2200:22"
+    volumes:
+      - ../web-root:/var/www
+      - ../volumes/ssh/home:/home
+      - ../volumes/ssh/shadow:/etc/shadow
+      - ../volumes/ssh/passwd:/etc/passwd
+      - ../volumes/ssh/group:/etc/group
+      - ./ssh/sshd_config:/etc/ssh/sshd_config:ro
   nginx:
     build:
       context:
         ./nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - "80:8080"
+      - "443:4433"
     volumes:
       - ../web-root:/var/www:ro
       - ../volumes/certbot:/etc/letsencrypt:ro
@@ -30,7 +43,7 @@ services:
     build:
       context: ./php-fpm
     expose:
-      - "9000"      
+      - "9000"
     volumes:
       - ../web-root:/var/www
     user: www-data
