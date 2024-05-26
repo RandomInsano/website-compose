@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   certbot:
@@ -15,8 +15,8 @@ services:
       context:
         ./nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - "80:8080"
+      - "443:4433"
     volumes:
       - ../web-root:/var/www:ro
       - ../volumes/certbot:/etc/letsencrypt:ro
@@ -46,4 +46,8 @@ services:
       - MYSQL_PASSWORD=user_pass
       - MYSQL_ROOT_PASSWORD=root_pass
     restart: always
-
+    logging:
+      driver: "local"
+      options:
+        max-size: "64m"
+        max-file: "3"
