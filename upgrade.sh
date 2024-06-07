@@ -2,7 +2,7 @@
 
 set -e
 
-pushd docker-compose
+pushd web-hosting
 
 if [ $# -eq 0 ]; then
 	echo "Usage: $0 [-dpr]"

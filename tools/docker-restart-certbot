@@ -8,4 +8,4 @@
 #   2. cp docker-restart-certbot /etc/cron.monthly/
 ############################################################
 
-/usr/bin/docker restart docker-compose_certbot_1
+/usr/bin/docker restart web-hosting_certbot_1
