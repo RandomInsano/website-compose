@@ -22,6 +22,7 @@ It's a bit awkward at the moment because nginx is reliant on certificates create
 Getting started:
 ```
 vi web-hosting/
+```
 
 New steps for adding a domain
 ```
@@ -47,12 +48,3 @@ sudo ./update.sh -r # To restart nginx to load new certificates
 
 * [A Docker-Compose PHP Environment From Scratch](https://x-team.com/blog/docker-compose-php-environment-from-scratch/)
 * [Nginx and Let’s Encrypt with Docker in Less Than 5 Minutes](https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71)
-
-
-
-
-
-### NOTES FROM MIGRATION 2024:
-
-
-
