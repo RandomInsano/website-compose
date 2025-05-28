@@ -5,7 +5,7 @@
 #
 # To install:
 #   1. chmod +x docker-restart-certbot
-#   2. cp docker-restart-certbot /etc/cron.monthly/
+#   2. cp docker-restart-certbot /etc/cron.daily/
 ############################################################
 
 /usr/bin/docker restart web-hosting_certbot_1
