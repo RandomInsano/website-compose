@@ -3,16 +3,17 @@ version: '3'
 services:
   certbot:
     image: certbot/certbot
-    command: certonly \
-      --no-eff-email \
-      -v \
-      --non-interactive \
-      --agree-tos \
-      --expand \
-      --webroot \
-      --webroot-path /var/www/letsencrypt \
-      --email ${ADMIN_MAIL} \
-      -d ${DOMAIN_LIST}
+    command: >-
+      certonly
+        --no-eff-email
+        -v
+        --non-interactive
+        --agree-tos
+        --expand
+        --webroot
+        --webroot-path /var/www/letsencrypt
+        --email ${ADMIN_MAIL}
+        -d ${DOMAIN_LIST}
     volumes:
       - ../volumes/certbot/:/etc/letsencrypt
       - $WEB_ROOT/letsencrypt:/var/www/letsencrypt
